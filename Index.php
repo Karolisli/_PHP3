@@ -1,13 +1,29 @@
-<!DOCTYPE html>
-<!--
-To change this license header, choose License Headers in Project Properties.
-To change this template file, choose Tools | Templates
-and open the template in the editor.
--->
+<?php
+    $ataskaita = [
+    [
+        'name' => 'IKI Darbo Uzmokestis',
+        'amount' => 600,//Eur
+    ],
+    [
+        'name' => 'Kalvariju Nacykas',
+        'amount' => -15,//Eur
+    ],
+    [
+        'name' => 'Baras',
+        'amount' => -250,//Eur
+    ],
+    [
+        'name'  => 'AntrasBaras',
+        'amount' => -200,//Eur
+    ]
+];
+            
+            
+?>
 <html>
     <head>
         <meta charset="UTF-8">
-        <title></title>
+        <title>ataskaita</title>
     </head>
     <body>
         <?php
