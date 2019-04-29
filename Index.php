@@ -15,7 +15,7 @@ $zodziai = [
 <html>
     <head>
         <meta charset="UTF-8">
-        <title></title>
+        <title>zodziai</title>
     </head>
     <?php echo $zodziai[$atrinkti_zodiai];?>
 </html>
