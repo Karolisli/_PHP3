@@ -1,29 +1,38 @@
 <?php
-
-$zodziai = [
-    'Petras', 'lauke', 'ryte', 'prie', 'Maximos', 'pirko', 'giros'
-    ];
-
-    $atrinkti_zodiai = rand(0, count ($zodziai) - 1);
-    
+$gerimai = [
+    [
+        'name' => 'Vlkmaerges Alus',
+        'kaina' => 4.50,
+        'nuolaida' => 0 //%  
+    ],
+    [
+        'name' => 'Stumbro Degtine',
+        'kaina' => 8.50,
+        'nuolaida' => 10//%
+    ],
+    [
+        'name' => 'Tuborg',
+        'kaina' => 3.10,
+        'nuolaida' => 25//%
+    ],
+    [
+        'name' => 'Duff',
+        'kaina' => 1.50,
+        'nuolaida' => 5//%
+    ]
+]
 ?>
 <html>
     <head>
         <meta charset="UTF-8">
-        <title>zodziai</title>
+        <title></title>
     </head>
-    <h2>Words</h2>
-        <ul>
-            <?php foreach($zodziai as $value): ?> 
-            <li>
-                <?php echo $value; ?>
-            </li>
-            <?php endforeach; ?>
-        </ul>
-    <h3>Random word</h3>
-    <ul>
-        <li>
-    <?php echo'*'. $zodziai[$atrinkti_zodiai];?>
-        </li>    
-    </ul>
+    <body>
+        <?php
+        // put your code here
+        ?>
+    </body>
 </html>
+
+
+
