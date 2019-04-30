@@ -1,4 +1,5 @@
 <?php
+
 $gerimai = [
     [
         'name' => 'Vlkmaerges Alus',
@@ -21,6 +22,7 @@ $gerimai = [
         'nuolaida' => 5//%
     ]
 ]
+        
 ?>
 <html>
     <head>
