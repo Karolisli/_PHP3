@@ -1,4 +1,5 @@
 <?php
+
 $gerimai = [
     [
         'name' => 'Vlkmaerges Alus',
@@ -21,8 +22,7 @@ $gerimai = [
         'nuolaida' => 0//%
     ]
 ];
-        
-        
+            
 foreach ($gerimai as $index => $value) {
     if ($value['nuolaida'] >0){
         $gerimai[$index]['css_class']= 'nuolaida1';
