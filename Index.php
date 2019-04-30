@@ -2,7 +2,7 @@
 
 $gerimai = [
     [
-        'name' => 'Vlkmaerges Alus',
+        'name' => 'Vilkmerges Alus',
         'kaina' => 4.50,
         'nuolaida' => 0 //%  
     ],
