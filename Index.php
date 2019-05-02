@@ -1,58 +1,27 @@
 <?php
-
-$gerimai = [
-    [
-        'name' => 'Vlkmaerges Alus',
-        'kaina' => 4.50,
-        'nuolaida' => 0 //%  
-    ],
-    [
-        'name' => 'Stumbro Degtine',
-        'kaina' => 8.50,
-        'nuolaida' => 10//%
-    ],
-    [
-        'name' => 'Tuborg',
-        'kaina' => 3.10,
-        'nuolaida' => 25//%
-    ],
-    [
-        'name' => 'Duff',
-        'kaina' => 1.50,
-        'nuolaida' => 0//%
-    ]
-];
-            
-foreach ($gerimai as $index => $value) {
-    if ($value['nuolaida'] >0){
-        $gerimai[$index]['css_class']= 'nuolaida1';
-    }else{
-        $gerimai[$index]['css_class']= 'nenuolaida1';
+function slot_box($size) {
+    $array = [];
+    for ($x = 0; $x <= $size; $x++) {
+        $row = [];
+        for ($z = 0; $z <= $size; $z++) {
+            $row[] = rand(0, 1);
+        }
+        $array[] = $row;
     }
+    return $array;
 }
-        
+$size = rand(1, 5);
+var_dump(slot_box($size));
+
 ?>
 <html>
     <head>
         <meta charset="UTF-8">
-        <title>D</title>
-        <style>
-            .nuolaida1 {
-                font-size: 25px;
-            } 
-            .nenuolaida1 {
-                font-size: 15px;
-            }
-        </style>
+        <title>Slot-box</title>
     </head>
     <body>
-        <ul>
-            <?php foreach ($gerimai as $value): ?>
-            <li class="<?php print $value['css_class']; ?>">
-                <span><?php print $value['name']; ?></span>
-                <span><?php print $value['nuolaida']; ?></span>
-            </li>
-            <?php endforeach;?>
-        </ul>
+        <?php
+// put your code here
+        ?>
     </body>
 </html>
