@@ -1,7 +1,8 @@
 <?php
+
 /**
- * 
- * @param type $size
+ * generuoja dinamine matrica
+ * @param integer $size matricos dydis
  * @return type
  */
 function slot_box($size) {
@@ -16,17 +17,45 @@ function slot_box($size) {
     return $array;
 }
 
-$size = rand(1, 5);
+$size = 2;
 var_dump(slot_box($size));
+$color = (slot_box($size));
+
 ?>
 <html>
     <head>
         <meta charset="UTF-8">
         <title>Slot-box</title>
+        <style>
+            div{
+                border: 3px solid white;
+                padding: 40px;
+                margin: 1px;
+            }
+            section{
+                display: flex;
+                justify-content: center;
+                align-items: baseline;
+            }
+            .blue{
+                background-color: blue;
+            }
+            .orange{
+                background-color: orange;
+            }
+        </style>
     </head>
     <body>
-        <?php
-// put your code here
-        ?>
+            <?php foreach ($color as $color2): ?>
+            <section>
+                <?php foreach ($color2 as $color3): ?>
+                    <?php if ($color3 > 0): ?>
+                        <div class="blue"></div>
+                    <?php else: ?>
+                        <div class ="orange"></div>
+                    <?php endif; ?>
+            <?php endforeach; ?>
+            </section>
+<?php endforeach; ?>
     </body>
 </html>
