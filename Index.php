@@ -1,4 +1,9 @@
 <?php
+/**
+ * 
+ * @param type $size
+ * @return type
+ */
 function slot_box($size) {
     $array = [];
     for ($x = 0; $x <= $size; $x++) {
@@ -10,9 +15,9 @@ function slot_box($size) {
     }
     return $array;
 }
+
 $size = rand(1, 5);
 var_dump(slot_box($size));
-
 ?>
 <html>
     <head>
