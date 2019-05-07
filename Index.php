@@ -1,13 +1,13 @@
 <?php
+$roll_joints = true;
 
-$x = 0;
-$b = &$x;
-unset($b);
+$joint1 = &$roll_joints;
+$joint2 = &$joint1;
+$joint3 = &$joint2;
 
-$b = 1;
-
-print $x; //$x=0
-
+print $joint1;
+print $joint2;
+print $joint3;
 ?>
 <html>
     <head>
