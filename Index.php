@@ -1,20 +1,15 @@
 <?php
-$roll_joints = true;
 
-$joint1 = &$roll_joints;
-$joint2 = &$joint1;
-$joint3 = &$joint2;
+$hack = filter_input_array(INPUT_POST, [
+    'hack_me' => FILTER_SANITIZE_ENCODED,
+    ]);
 
-print $joint1;
-print $joint2;
-print $joint3;
 ?>
 <html>
-    <head>
-        <meta charset="UTF-8">
-        <title></title>
-    </head>
     <body>
-
+        <form method="post">
+            <input type="text" name="hack_me" placeholder="Hack Me" required>
+            <button name="button" value="push">Try</button>
+        </form>
     </body>
 </html>
